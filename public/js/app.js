@@ -1,34 +1,3 @@
-console.log('Client side js file is loaded')
-
-// fetch('https://puzzle.mead.io/puzzle').then((response) => {
-//     response.json().then( (data) => {
-//         console.log(data)
-//     })
-// })
-
-// fetch('http://localhost:3000/weather?address=boston').then( (error, response) => {
-//     if(error){
-//         return error.json().then((error) => {
-//             console.log(error)
-//         })
-//     }
-//     response.json().then((data) =>{
-//         console.log(data)
-//     })
-// })
-
-// fetch('http://localhost:3000/weather?address=!').then((response) => {
-//    response.json().then((data) => {
-//        if(data.error){
-//            console.log(data.error)
-//        }
-//        else{
-//            console.log(data.location)
-//            console.log(data.forecastData)
-//        }
-//    })
-// })
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1') // # for id, . for class, nothing for simple tag name like form
@@ -60,3 +29,32 @@ weatherForm.addEventListener('submit', (e) => {
     })
     // console.log(location)
 })
+
+// fetch('https://puzzle.mead.io/puzzle').then((response) => {
+//     response.json().then( (data) => {
+//         console.log(data)
+//     })
+// })
+
+// fetch('http://localhost:3000/weather?address=boston').then( (error, response) => {
+//     if(error){
+//         return error.json().then((error) => {
+//             console.log(error)
+//         })
+//     }
+//     response.json().then((data) =>{
+//         console.log(data)
+//     })
+// })
+
+// fetch('http://localhost:3000/weather?address=!').then((response) => {
+//    response.json().then((data) => {
+//        if(data.error){
+//            console.log(data.error)
+//        }
+//        else{
+//            console.log(data.location)
+//            console.log(data.forecastData)
+//        }
+//    })
+// })
