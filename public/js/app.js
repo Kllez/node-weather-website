@@ -22,8 +22,7 @@ weatherForm.addEventListener('submit', (e) => {
                 // console.log(data.location)
                 // console.log(data.forecastData)
                 messageOne.textContent = data.location
-                const mes = JSON.stringify(data.forecastData)
-                messageTwo.textContent = mes
+                messageTwo.textContent = data.forecastData
             }
         })
     })
