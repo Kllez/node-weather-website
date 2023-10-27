@@ -5,6 +5,7 @@ const geocode= require('./utils/geocode')
 const forecast= require('./utils/forecast')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // path for express configuration
 const publicDirPath = path.join(__dirname, '../public')
@@ -118,6 +119,6 @@ app.get('*', (req,res) => {
 // })
 
 
-app.listen(3000 , () => { //to start the web server, port=3000, callback fn= which will run when server starts
-    console.log('Server is up and running!') //asynchronous but happens instantly
+app.listen(port , () => { //to start the web server, port=3000, callback fn= which will run when server starts
+    console.log('Server is up on port '+port) //asynchronous but happens instantly
 })
